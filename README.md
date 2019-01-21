@@ -1,6 +1,6 @@
 # Streams.ini-GaGa
 
-Utiliser directement Streams.bat en mode administrateur ! : il va se charger de transférer les bookmarks du site directement au bonne endroit sinon déplacer Streams.ini (en mode administrateur) dans son dossier.
+Utiliser directement Streams.bat en mode administrateur ! : il va se charger de transférer les bookmarks du site directement au bonne endroit sinon déplacer vous même Streams.ini (en mode administrateur) dans son dossier.
 
 Shortcut.xml : Macro Notepad ++ afin de convertir bookmarks.xml de RadioTray (Linux) en Streams.ini pour GaGa (clone de RadioTray pour Windows).
 
