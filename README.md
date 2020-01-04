@@ -8,4 +8,4 @@ GaGa.iss : Script d'installation (innosetup) de GaGa complété de mes radios fa
 
 Les sources du soft GaGa : https://github.com/Beluki/GaGa.git et le fichier d'installation : https://github.com/Beluki/GaGa/releases.
 
-Streams.ini : axé sur plus 600 radios et webradios françaises !
+Streams.ini : axés sur plus 600 radios et webradios françaises !
