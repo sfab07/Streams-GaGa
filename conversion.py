@@ -21,12 +21,13 @@ def xml_to_ini(xml_path, ini_path):
         if bookmark.tag == 'bookmark':
             entries.append(f"{bookmark.attrib['name']} = {bookmark.attrib['url']}")
     
-    # Traitement des groupes
+    # Traitement des groupes (sauf "Flac International")
     for group in root[0]:
         if group.tag == 'group':
-            entries.append(f"\n[{group.attrib['name']}]")
-            for bookmark in group:
-                entries.append(f"{bookmark.attrib['name']} = {bookmark.attrib['url']}")
+            if group.attrib['name'] != 'Flac International':  # Nouvelle condition pour exclure le groupe
+                entries.append(f"\n[{group.attrib['name']}]")
+                for bookmark in group:
+                    entries.append(f"{bookmark.attrib['name']} = {bookmark.attrib['url']}")
 
     # Écriture dans le fichier INI
     with open(ini_path, 'w', encoding='utf-8') as f:
